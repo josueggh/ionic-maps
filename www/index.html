@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+
+    <!-- compiled css output -->
+    <link href="css/ionic.app.css" rel="stylesheet">
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+
+    <!-- ngCordova library -->
+    <script src="lib/ngCordova/dist/ng-cordova.js"></script>
+    <script src="cordova.js"></script>
+
+    <!--     google maps API -->
+    <script src="js/app.js"></script>
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyB70P-ou7_DA5xGrzdlkVwGUaGuH39ucwg&sensor=true"></script>
+
+    <!--     more javascript -->
+    <script src="js/controllers.js"></script>
+
+  </head>
+<body ng-app="starter" ng-app="app" animation="slide-left-right-ios7">
+
+    <ion-tabs>
+        <ion-tab title="Saved">
+            <ion-header-bar class="bar-stable">
+                <h1 class="title">Saved</h1>
+            </ion-header-bar>
+            <ion-content>
+<!-- content from saved.html -->
+            <ion-view title="Saved" id="page2" class=" ">
+                <ion-content padding="true" class="has-header">
+                    <form id="saved-form9" class="list ">
+                        <ion-toggle toggle-class="toggle-positive" id="saved-toggle8" class=" ">Notifications</ion-toggle>
+                    </form>
+                    <h1 id="saved-heading2" style="color:#000000;" class=" ">PLACES</h1>
+                    <ion-list id="saved-list9" class=" ">
+                        <ion-item class="item-thumbnail-left  " id="saved-list-item16">
+                            <img src="img/6qWEd0s1TyeVAuu8nNjx_tumblr_my4na5uFGS1s28q3io7_1280.jpg">
+                            <h2>Museum</h2>
+                            <p style="white-space:normal;">National Museum of Anthropology
+                                <br>9AM–7PM | 3 km away</p>
+                        </ion-item>
+                    </ion-list>
+                    <ion-list id="saved-list11" class=" ">
+                        <ion-item class="item-thumbnail-left  " id="saved-list-item27" href="#" onclick="window.open('http://www.museofridakahlo.org.mx/', '_system', 'location=yes'); return false;">
+                            <img src="img/mpnPArE1TXaLORwlhLyM_fb555badaa63b7ab06679f38ef39fc84-museo-frida-kahlo.jpg">
+                            <h2>Museum</h2>
+                            <p>Frida Kahlo Museum
+                                <br>11AM–75PM | 8 km away</p>
+                        </ion-item>
+                    </ion-list>
+                    <h1 id="saved-heading3" style="color:#000000;" class=" ">EVENTS</h1>
+                    <ion-list id="saved-list10" class=" ">
+                        <ion-item class="item-thumbnail-left  " id="saved-list-item26" href="#" onclick="window.open('http://www.timeoutmexico.mx/df/cine/lynchando-a-lynch-una-retrospectiva', '_system', 'location=yes'); return false;">
+                            <img src="img/6kaNOA8BQQiGmvOG4koX_image.jpg">
+                            <h2>Film | FREE</h2>
+                            <p>Lynchando a Lynch:
+                                <br>una retrospectiva
+                                <br>5PM | 1 km away</p>
+                        </ion-item>
+                    </ion-list>
+                </ion-content>
+            </ion-view>
+<!-- end of content from saved.html -->
+            </ion-content>
+        </ion-tab>
+        <ion-tab title="Map">
+            <ion-content>
+            <ion-pane>
+                <ion-header-bar class="bar-stable">
+                    <h1 class="title">Maps</h1>
+                </ion-header-bar>
+                <ion-nav-view></ion-nav-view>
+                </ion-pane>
+                <p>"Map"</p>
+            </ion-content>
+        </ion-tab>
+        <ion-tab title="Happening Now">
+            <ion-header-bar class="bar-stable">
+                <h1 class="title">Happening now</h1>
+            </ion-header-bar>
+            <ion-content>
+<!--             code from happeningNow.html -->
+            <ion-view title="Happening Now" id="page6" class=" ">
+                <ion-content padding="true" class="has-header">
+                    <h1 id="happeningNow-heading4" style="color:#000000;" class=" ">TODAY</h1>
+                    <ion-list id="happeningNow-list6" class=" ">
+                        <ion-item class="item-thumbnail-left  " id="happeningNow-list-item20">
+                            <img src="img/nJhXqUMTEWGJDi0fMGEg_BultenEklenti-635143333925040503.jpg">
+                            <h2>Museum      ♥</h2>
+                            <p style="white-space:normal;">MUAC: Anish Kapoor Archeology, Biology
+                                <br>
+                                <br>Now | 7 km away</p>
+                        </ion-item>
+                        <ion-item class="item-thumbnail-left  " id="happeningNow-list-item19" ui-sref="tabsController.page9">
+                            <img src="img/fwBLgPewQDSvsFaF7baw_thelobster-posters.jpg">
+                            <h2>Film         ♥</h2>
+                            <p style="white-space:normal;">Cineteca Nacional
+                                <br>The Lobster
+                                <br>
+                                <br>In 2 hrs | 1 km away</p>
+                        </ion-item>
+                    </ion-list>
+                    <h1 id="happeningNow-heading5" style="color:#000000;" class=" ">TOMORROW</h1>
+                    <ion-list id="happeningNow-list13" class=" ">
+                        <ion-item class="item-thumbnail-left  " id="happeningNow-list-item21">
+                            <img src="img/OMZpwyOlTU6SJ07EBkRr_250px-Anahuacalli_museum_mexico_city.JPG">
+                            <h2>Architecture    ♥</h2>
+                            <p>Anahuacalli Museum
+                                <br>1964
+                                <br>
+                                <br>11AM–5:30PM</p>
+                        </ion-item>
+                    </ion-list>
+                </ion-content>
+            </ion-view>
+<!-- end of code happeningNow.html -->
+            </ion-content>
+        </ion-tab>
+    </ion-tabs>
+
+<!-- WHEN SIDEMENU ADDED, CANNOT CLICK THROUGH PAGES -->
+ <!-- <div>
+    <ion-side-menus enable-menu-with-back-views="false" data-componentid="side-menu21">
+        <ion-side-menu-content>
+            <ion-nav-bar class="bar-stable">
+                <ion-nav-back-button></ion-nav-back-button>
+                <ion-nav-buttons side="left">
+                    <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+                </ion-nav-buttons>
+            </ion-nav-bar>
+            <ion-nav-view></ion-nav-view>
+        </ion-side-menu-content>
+        <ion-side-menu side="left" id="side-menu21">
+            <ion-header-bar class="bar-stable">
+                <div class="title">Categories</div>
+            </ion-header-bar>
+            <ion-content padding="false" class="side-menu-left has-header">
+                <form id="categories-form7" class="list " data-componentid="form7">
+                    <ion-toggle toggle-class="toggle-positive" ng-checked="true" id="categories-toggle5" class=" " data-componentid="toggle5">All</ion-toggle>
+                    <ion-checkbox data-componentid="checkbox2">Architecture + public spaces</ion-checkbox>
+                    <ion-checkbox data-componentid="checkbox7">Drinks</ion-checkbox>
+                    <ion-checkbox data-componentid="checkbox8">Films</ion-checkbox>
+                    <ion-checkbox data-componentid="checkbox9">Food</ion-checkbox>
+                    <ion-checkbox data-componentid="checkbox13">Literature</ion-checkbox>
+                    <ion-checkbox data-componentid="checkbox10">Markets</ion-checkbox>
+                    <ion-checkbox data-componentid="checkbox11">Museums</ion-checkbox>
+                    <ion-checkbox data-componentid="checkbox14">Music</ion-checkbox>
+                    <ion-checkbox data-componentid="checkbox12">Views</ion-checkbox>
+                </form>
+            </ion-content>
+        </ion-side-menu>
+    </ion-side-menus>
+</div>
+ -->
+
+</body>
+</html>
